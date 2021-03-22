@@ -1,0 +1,41 @@
+
+    body { height: 100%; width: 100%; margin: 0px; font-size:80%; }
+    
+    .h2{
+    text-align: center;
+    }
+    .column {
+    float: left;
+    display: flex;
+    }
+
+  .directory{
+    display: flex;
+    padding: 5px 0 5px 0;
+    text-align: center;
+  
+  }
+
+  .form{
+      padding: 0 5px;
+  }
+  .mapColumn{
+    margin-right: 2px;
+    width: 6vw;
+    height: 96vh;
+  }
+  .mapSpace{
+    height: 90vh;
+    display: flex;
+    justify-content: right;
+  }
+  
+  /* #mapid1{
+    margin-right: 2px;
+    width: 40vw;
+    height: 100vh;
+  } */
+  .expand{
+    margin-right: 2px;
+    width: 40vw;
+  }

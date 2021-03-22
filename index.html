@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>mapping distance</title>
+  <meta name="description" content="a map collage maker">
+  <meta name="author" content="Jessie">
+ 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+       integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+       crossorigin=""/>
+       
+  <link rel="stylesheet" href="app.css">
+
+</head>
+
+<body>
+<div class="row">
+    <div class="directory">
+        <button onclick="towhere(40.712,-74.013,15)">Manhattan</button>
+        <button onclick="towhere(36.061,-102.507,15)">Dalhart</button>
+        <button onclick="towhere(32.275,100.326,15)">Sertar</button>
+        <button onclick="towhere(10.776,106.684,15)">Ho Chi Minh City</button>
+
+        <div class="form">
+          
+              <label>latitude:</label>
+              <input id="latDIY" name="latDIY" type="text">
+            
+              <label>longitude:</label>
+              <input id="lngDIY" name="lngDIY" type="text">
+            
+              <button onclick="towhereDIY()">Sumbit</button>
+            </div>
+       
+    </div>
+  <div id="column" class="column">
+        <div class="mapColumn expand">
+          <div id="mapid1" class="mapSpace" ></div>
+          <div id="mapinfo1" class="mapInfo" ></div>
+          <div id="mapbtn1" class="mapBtn" >
+            <button onclick="expandColumn(1)">expand</button>
+          </div>
+        </div>
+
+          <div class="mapColumn">
+            <div id="mapid2" class="mapSpace" ></div>
+            <div id="mapinfo2" class="mapInfo" ></div>
+            <div id="mapbtn2" class="mapBtn" >
+                <button onclick="expandColumn(2)">expand</button>
+            </div>
+          </div>
+        
+          <div class="mapColumn">
+            <div id="mapid3" class="mapSpace" ></div>
+            <div id="mapinfo3" class="mapInfo" ></div>
+            <div id="mapbtn3" class="mapBtn" >
+                <button onclick="expandColumn(3)">expand</button>
+            </div>
+          </div>
+          <div class="mapColumn">
+            <div id="mapid4" class="mapSpace" ></div>
+            <div id="mapinfo4" class="mapInfo" ></div>
+            <div id="mapbtn4" class="mapBtn" >
+                <button onclick="expandColumn(4)">expand</button>
+            </div>
+          </div>
+          <div class="mapColumn">
+            <div id="mapid5" class="mapSpace" ></div>
+            <div id="mapinfo5" class="mapInfo" ></div>
+            <div id="mapbtn5" class="mapBtn" >
+                <button onclick="expandColumn(5)">expand</button>
+            </div>
+          </div>
+          <div class="mapColumn">
+            <div id="mapid6" class="mapSpace" ></div>
+            <div id="mapinfo6" class="mapInfo" ></div>
+            <div id="mapbtn6" class="mapBtn" >
+                <button onclick="expandColumn(6)">expand</button>
+            </div>
+          </div>
+          <div class="mapColumn">
+            <div id="mapid7" class="mapSpace" ></div>
+            <div id="mapinfo7" class="mapInfo" ></div>
+            <div id="mapbtn7" class="mapBtn" >
+                <button onclick="expandColumn(7)">expand</button>
+            </div>
+          </div>
+          <div class="mapColumn">
+            <div id="mapid8" class="mapSpace" ></div>
+            <div id="mapinfo8" class="mapInfo" ></div>
+            <div id="mapbtn8" class="mapBtn" >
+                <button onclick="expandColumn(8)">expand</button>
+            </div>
+          </div>
+          <div class="mapColumn">
+            <div id="mapid9" class="mapSpace" ></div>
+            <div id="mapinfo9" class="mapInfo" ></div>
+            <div id="mapbtn9" class="mapBtn" >
+                <button onclick="expandColumn(9)">expand</button>
+            </div>
+          </div>
+          <div class="mapColumn">
+            <div id="mapid10" class="mapSpace" ></div>
+            <div id="mapinfo10" class="mapInfo" ></div>
+            <div id="mapbtn10" class="mapBtn" >
+                <button onclick="expandColumn(10)">expand</button>
+            </div>
+          </div>
+          <div class="mapColumn">
+            <div id="mapid11" class="mapSpace" ></div>
+            <div id="mapinfo11" class="mapInfo" ></div>
+            <div id="mapbtn11" class="mapBtn" >
+                <button onclick="expandColumn(11)">expand</button>
+            </div>
+          </div>
+<!-- 
+    <div id="mapid2" class="mapColumn" ></div>
+    <div id="mapid3" class="mapColumn" ></div>
+    <div id="mapid4" class="mapColumn" ></div>
+    <div id="mapid5" class="mapColumn" ></div>
+    <div id="mapid6" class="mapColumn" ></div>
+    <div id="mapid7" class="mapColumn" ></div>
+    <div id="mapid8" class="mapColumn" ></div>
+    <div id="mapid9" class="mapColumn" ></div>
+    <div id="mapid10" class="mapColumn" ></div>
+    <div id="mapid11" class="mapColumn" ></div> -->
+  </div>
+  
+ 
+</div>
+
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+<script src="app.js"></script>
+    </body>
+    </html>
