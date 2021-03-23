@@ -101,7 +101,9 @@ function towhereDIY(){
      var zoom = mymap[index].getZoom();
      var latlng = mymap[index].getCenter();
      init(index,latlng.lat,latlng.lng,zoom);
+     
      mymap[index].invalidateSize();
+     mymap[lastExpand].invalidateSize();
 
      lastExpand = index;
 
